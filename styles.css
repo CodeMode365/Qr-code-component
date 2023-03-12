@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap");
+
+:root {
+  /* layouts */
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+
+  /* Colors */
+
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+
+  /* Typography */
+  --title: 20px;
+  --paragrah: 15px;
+  --fw1: 400;
+  --fw2: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5%;
+}
+
+body {
+  background-color: var(--light-gray);
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  max-width: 320px;
+  min-width: 320px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background: var(--white);
+}
+.qr-container{
+  width: 90%;
+  background: var(--light-gray);
+  margin-inline:auto;
+  margin-top: 15px;
+}
+.qr-container img{
+  width: 100%;
+}
+.disc{
+margin-inline:auto;
+width: 90%;
+text-align: center;
+margin-block: 15px;
+}
+
+.disc .title{
+  font-size: var(--title);
+  font-weight: var(--fw2);
+  letter-spacing: 1.2px;
+  color: var(--dark-blue);
+  margin-block: 10px;
+}
+.disc .sub-title{
+  font-size: var(--paragrah);
+  font-weight: var(--fw1);
+  color: var(--grayish-blue);
+  margin-top: 15px;
+  margin-bottom: 25px;
+  letter-spacing: .8px;
+}
